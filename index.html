@@ -151,5 +151,81 @@
                     <input type="submit" value="login">
             </filedset>
         </form>
+        <form action="">
+            <filedset>
+                <legend>Delivery Information</legend>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="addr">Home Address</label>
+                        <input type="text" id="addr">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </li>
+                </ul>
+            </filedset>
+        </form>
+
+        <h2>Booking a hotel room</h2>
+        <form>
+            <div>
+                <select>
+                    <option value="unit_g">Gladstone</option>
+                    <option value="unit_s">Summerset</option>
+                    <option value="unit_t">Twicebbq</option>
+                    <option selected>Choose one of your favorite sutie</option>
+                </select>
+            </div>
+            <div>
+                <lable for="capacity">Number of people</lable>
+                <input type="number" min="1" max="6" value="1" id="capacity"><br>
+                <h4><b>Breakfast</b> (Choose below one of the option)</p>
+                <label><input type="radio" name="choose_breakfast" checked>Include</label>
+                <label><input type="radio" name="choose_breakfast">Exclude</label>
+            </div>
+            <filedset>
+                <label for="user_name">Name</label>
+                <input type="text" id="user_name" placeholder="Full Name" autofocus><br>
+                <label for="user_number">Phone Number</label>
+                <input type="tel" id="user_number" placeholder="xxx-xxx-xxxx" required><br>
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" placeholder="xxxxx@xxxxx.xxx"><br>
+                <input type="submit" value="Booking">
+                <input type="reset" value="Cancel">
+            </filedset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend></legend>
+                <h1>Applying Form for Front-end Developer</h1>
+                <p>We are looking for a full-time employee who can understand and have knowledge about HTML, CSS, JavaScript, etc.<br>3 years experience are preferred (Not requried).</p>
+
+                <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <label for="full_name">Full Name</label>
+                            <input style="width: 250px;" type="text" id="full_name" placeholder="If you have a middle name, then provide)"><br>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </li>
+                    </ul>
+                <h3>Applied Field</h3>
+                    <label><input type="radio" name="applied_field" checked>Web Publishing</label>
+                    <label><input type="radio" name="applied_field">Web Application Development</label>
+                    <label><input type="radio" name="applied_field">Improvement of Development Environment</label>
+                <h3>Purpose of Applying</h3>
+                    <label><input style="width:500px; height: 150px;" type="textarea" cols="5" rows="5" placeholder="Tell me the reason why you applied our company and the field." autofocus></label><br>
+                    <input type="submit" value="Apply">
+                    <input type="reset" value="Cancel">
+            </fieldset>
+        </form>
 </body>
 </html>
